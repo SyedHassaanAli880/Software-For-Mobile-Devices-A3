@@ -20,27 +20,30 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="175dp"
+        style="@android:style/Widget.Button"
+        android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginBottom="32dp"
         android:text="Get started"
+        android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        style="@android:style/Widget.Button"
-        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="130dp" />
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:layout_marginBottom="24dp"
         android:text="Download all the designs  \n on the uilover channel \n for free."
         android:textColor="#ffffff"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/button3"
-        tools:layout_editor_absoluteX="130dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
